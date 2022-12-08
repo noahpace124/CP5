@@ -3,23 +3,13 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Get A Joke</Link>
-          </li>
-          <li>
-            <Link to="/Create">Create a Joke</Link>
-          </li>
-          <li>
-            <Link to="/View">View Your Jokes</Link>
-          </li>
-        </ul>
-      </nav>
-
+      <div id="navbar">
+        <Link class="col-l" to="/view"><h3>View Your Jokes</h3></Link>
+        <Link class="col-m" to="/"><h2>Tell Me A Joke</h2></Link>
+        <Link class="col-r" to="/create"><h3>Create A Joke</h3></Link>
+      </div>
       <Outlet />
     </>
-  )
-};
+  )};
 
 export default Layout;
