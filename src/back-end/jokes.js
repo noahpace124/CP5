@@ -126,9 +126,7 @@ const jokes = [
 }
 {
     writer: "Server",
-    joke: "What do you call a fish without an eye? A fsh.
-
-"
+    joke: "What do you call a fish without an eye? A fsh."
 }
 {
     writer: "Server",
