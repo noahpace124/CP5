@@ -27,8 +27,8 @@ mongoose.connect('mongodb://localhost:27017/test', {
 const jokeSchema = new mongoose.Schema({
     writer: String,
     joke: String,
-    rating: Number,
-    ratings: Number //amount of ratings
+    rating: Number, //the ratings
+    ratings: [] //amount of ratings
 });
 jokeSchema.virtual('id')
   .get(function() {
